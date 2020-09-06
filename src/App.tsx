@@ -25,7 +25,7 @@ export interface AppState {
 export class App extends React.Component<AppProps, AppState> {
 
 	public static appData: Directory | undefined;
-	public static API_URL: string = "http://10.0.0.2:8080";
+	public static API_URL: string = "https://api-nmcmusic.jeffreycobb.com";
 
 	public constructor(props: AppProps) {
 

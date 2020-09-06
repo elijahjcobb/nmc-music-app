@@ -1,0 +1,42 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.App nav {
+  height: 15vh;
+  padding: 12px;
+  display: flex;
+  background: #008365;
+  color: white;
+  align-items: center;
+}
+.App nav .logo {
+  background: white;
+  padding: 8px;
+  width: 48px;
+  margin-right: 16px;
+}
+.App nav .title {
+  font-size: 2em;
+}
+.App footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  background: #008365;
+  width: 100%;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/*# sourceMappingURL=App.css.map */

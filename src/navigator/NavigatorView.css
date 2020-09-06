@@ -1,0 +1,30 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+.NavigatorView .header {
+  background: #008365;
+  color: white;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.NavigatorView .header .chevron {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+.NavigatorView .rows {
+  overflow-y: scroll;
+}
+
+/*# sourceMappingURL=NavigatorView.css.map */

@@ -1,0 +1,29 @@
+/**
+ * Elijah Cobb
+ * elijah@elijahcobb.com
+ * elijahcobb.com
+ * github.com/elijahjcobb
+ */
+
+.NavigatorRowView {
+
+	padding: 18px;
+	border: solid lightgray 1px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	.icon {
+
+	}
+
+	.name {
+		flex-grow: 1;
+		margin: 0 8px;
+	}
+
+	.chevron {
+
+	}
+
+}

@@ -15,7 +15,8 @@
     "react-scripts": "3.4.3",
     "typescript": "^3.7.5",
     "@material-ui/core": "latest",
-    "@material-ui/icons": "latest"
+    "@material-ui/icons": "latest",
+    "@element-ts/oxygen": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

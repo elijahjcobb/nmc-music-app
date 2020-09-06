@@ -34,9 +34,14 @@
   background: #008365;
   width: 100%;
   padding: 12px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: white;
+}
+.App footer a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=App.css.map */

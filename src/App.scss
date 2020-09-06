@@ -37,9 +37,15 @@
 		background: $nmcGreen;
 		width: 100%;
 		padding: 12px;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 		color: white;
+
+		a {
+			font-weight: bold;
+			color: white;
+			text-decoration: none;
+		}
 	}
 
 }

@@ -10,7 +10,7 @@ import "./NavigatorView.css";
 import {Directory, File} from "../types";
 import {NavigatorRowView} from "./NavigatorRowView";
 import {ChevronLeft} from "@material-ui/icons";
-import {DUMMY_DATA} from "../data-dummy";
+import {App} from "../App";
 
 export interface NavigatorViewProps {
 	state: NavigatorViewState | undefined;
@@ -28,7 +28,13 @@ export class NavigatorView extends React.Component<NavigatorViewProps, Navigator
 
 		super(props);
 
-		this.state = this.props.state ?? { directory: DUMMY_DATA, stack: [] };
+		const data = App.appData;
+		if (data === undefined) {
+			const msg = "App data was undefined yet navigator view was displayed."
+			App.showError(msg);
+			throw new Error(msg)
+		}
+		this.state = this.props.state ?? { directory: data, stack: [] };
 		this.handleRowSelected = this.handleRowSelected.bind(this);
 		this.handleBackButtonClicked = this.handleBackButtonClicked.bind(this);
 

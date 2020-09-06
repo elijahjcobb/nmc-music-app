@@ -7,8 +7,9 @@
 
 import * as React from "react";
 import {File, FileType} from "../types";
-import {ChevronLeft} from "@material-ui/icons";
+import {ChevronLeft, Launch} from "@material-ui/icons";
 import "./FilePlayerView.css";
+import {App} from "../App";
 
 export interface FilePlayerProps {
 	file: File;
@@ -31,13 +32,14 @@ export class FilePlayer extends React.Component<FilePlayerProps, FilePlayerState
 
 	private getFrameForFile(): React.ReactElement {
 		const file = this.props.file;
+		const url = App.API_URL + file.url;
 		switch (file.type) {
 			case FileType.video:
-				return (<video className={"player video"} controls><source src={file.url} type="video/mp4"/></video>);
+				return (<video className={"player video"} controls><source src={url} type="video/mp4"/></video>);
 			case FileType.song:
-				return (<audio className={"player song"} controls><source src={file.url} type="audio/mpeg"/></audio>);
+				return (<audio className={"player song"} controls><source src={url} type="audio/mpeg"/></audio>);
 			case FileType.pdf:
-				return <object className={"player pdf"} data={file.url} type={"application/pdf"}><a href={file.url} target={"_blank"} rel={"noopener noreferrer"}>Your device does not support viewing PDF files in line. Click to open a new tab.</a></object>;
+				return <a href={url} target={"_blank"} rel={"noopener noreferrer"}><Launch className={"launchIcon"}/></a>;
 		}
 		return <div/>;
 	}

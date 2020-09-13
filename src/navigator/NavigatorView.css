@@ -23,6 +23,9 @@
   width: 30px;
   height: 30px;
 }
+.NavigatorView .header h2 {
+  margin-left: 20px;
+}
 .NavigatorView .rows {
   overflow-y: scroll;
   height: 66vh;

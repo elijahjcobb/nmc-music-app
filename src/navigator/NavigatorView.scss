@@ -13,7 +13,7 @@
 
 		background: $nmcGreen;
 		color: white;
-		padding: 12px;
+		height: 10vh;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
@@ -28,7 +28,7 @@
 
 	.rows {
 		overflow-y: scroll;
-		height: 100vh - 24vh;
+		height: 100vh - 24vh - 10vh;
 	}
 
 }

@@ -25,6 +25,7 @@
 }
 .NavigatorView .rows {
   overflow-y: scroll;
+  height: 76vh;
 }
 
 /*# sourceMappingURL=NavigatorView.css.map */

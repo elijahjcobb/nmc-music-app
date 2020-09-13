@@ -11,6 +11,7 @@ import {NavigatorView, NavigatorViewState} from "./navigator/NavigatorView";
 import {Directory, File} from "./types";
 import {FilePlayer} from "./player/FilePlayer";
 import {OStandardType} from "@element-ts/oxygen";
+import {DUMMY_DATA} from "./data-dummy";
 
 export interface AppProps {
 
@@ -52,6 +53,9 @@ export class App extends React.Component<AppProps, AppState> {
 
 	public componentDidMount() {
 		if (App.appData !== undefined) return;
+
+		// App.appData = DUMMY_DATA;
+		// this.setState({needsLoad: false});
 
 		const req = new XMLHttpRequest();
 

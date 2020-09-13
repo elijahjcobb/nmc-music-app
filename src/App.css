@@ -11,7 +11,7 @@
  * github.com/elijahjcobb
  */
 .App nav {
-  height: 15vh;
+  height: 16vh;
   padding: 12px;
   display: flex;
   background: #008365;
@@ -33,7 +33,7 @@
   bottom: 0;
   background: #008365;
   width: 100%;
-  padding: 12px;
+  height: 8vh;
   justify-content: space-around;
   align-items: center;
   color: white;

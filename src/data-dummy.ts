@@ -54,6 +54,41 @@ export const DUMMY_DATA: Directory = {
 			url: "https://www.w3schools.com/html/mov_bbb.mp4"
 		},
 		{
+			name: "Random Song a",
+			type: FileType.song,
+			url: "https://www.w3schools.com/html/horse.ogg"
+		},
+		{
+			name: "Random PDF",
+			type: FileType.pdf,
+			url: "http://www.africau.edu/images/default/sample.pdf"
+		},
+		{
+			name: "Random Video",
+			type: FileType.video,
+			url: "https://www.w3schools.com/html/mov_bbb.mp4"
+		},
+		{
+			name: "Random Song b",
+			type: FileType.song,
+			url: "https://www.w3schools.com/html/horse.ogg"
+		},
+		{
+			name: "Random Song a",
+			type: FileType.song,
+			url: "https://www.w3schools.com/html/horse.ogg"
+		},
+		{
+			name: "Random PDF",
+			type: FileType.pdf,
+			url: "http://www.africau.edu/images/default/sample.pdf"
+		},
+		{
+			name: "Random Video",
+			type: FileType.video,
+			url: "https://www.w3schools.com/html/mov_bbb.mp4"
+		},
+		{
 			name: "Choir 2",
 			children: [
 

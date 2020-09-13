@@ -25,6 +25,7 @@
 }
 .NavigatorView .header h2 {
   margin-left: 20px;
+  text-overflow: ellipsis;
 }
 .NavigatorView .rows {
   overflow-y: scroll;

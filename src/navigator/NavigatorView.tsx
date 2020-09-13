@@ -63,7 +63,7 @@ export class NavigatorView extends React.Component<NavigatorViewProps, Navigator
 		return (<div className={"NavigatorView"}>
 			<div className={"header"}>
 				<ChevronLeft style={{display: this.state.directory.name === "" ? "none" : "block"}} onClick={this.handleBackButtonClicked} className={"chevron"}/>
-				<h2>{this.state.directory.name ?? "Home"}</h2>
+				<h2>{this.state.directory.name === "" ? "Home" : this.state.directory.name}</h2>
 			</div>
 			<div className={"rows"}>
 				{this.state.directory.children.sort((a, b) => {
